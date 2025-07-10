@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Add Product (Admin Panel)</h2>
+<form method="post">
+  <input name="name" class="form-control" placeholder="Product Name"><br>
+  <input name="price" class="form-control" placeholder="Price"><br>
+  <input name="description" class="form-control" placeholder="Description"><br>
+  <input name="image" class="form-control" placeholder="Image URL"><br>
+  <button class="btn btn-success">Add Product</button>
+</form>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Your Cart</h2>
+<ul class="list-group">
+  {% for item in cart_items %}
+  <li class="list-group-item d-flex justify-content-between">
+    {{ item[1] }}
+    <span>${{ item[2] }}</span>
+  </li>
+  {% endfor %}
+</ul>
+<h4>Total: ${{ total }}</h4>
+{% endblock %}
